@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <header
+    class="flex-row px-1"
+  >
+    <h2>
+      <a
+        href="/"
+      >
+        <span
+          aria-label="snell"
+          role="img"
+        >
+          <img
+            alt="snell logo"
+            class="my-1"
+            src="snell_logo.png"
+            style="width: 50px;"
+          />
+        </span>
+        Shannon Nell
+      </a>
+    </h2>
+    <ul
+      class="flex-row"
+    >
+      <li
+        class="mx-1"
+      >
+        <a
+          href="#about"
+        >
+          about
+        </a>
+      </li>
+      <li
+        class="mx-1"
+      >
+        <a
+          href="#portfolio"
+        >
+          portfolio
+        </a>
+      </li>
+      <li
+        class="mx-1"
+      >
+        <a
+          href="#contact"
+        >
+          contact
+        </a>
+      </li>
+      <li
+        class="mx-1"
+      >
+        <a
+          href="#resume"
+        >
+          resume
+        </a>
+      </li>
+    </ul>
+  </header>
+</DocumentFragment>
+`;
