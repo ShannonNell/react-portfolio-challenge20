@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logoImage from '../../assets/snell_logo.png';
 import Nav from '../../components/Nav';
 import About from '../About';
-import Portfolio from '../Portfolio';
+import Projects from '../Portfolio';
 // import Contact from '../Contact';
 // import Resume from '../Resume';
 
@@ -15,7 +15,7 @@ function Header() {
             case "about": 
             return <About></About>
             case "portfolio": 
-            return <Portfolio></Portfolio>
+            return <Projects></Projects>
             // case "contact": 
             // return <Contact></Contact>
             // case "resume":
