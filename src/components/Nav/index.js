@@ -14,9 +14,12 @@ function Nav() {
                     className="mx-1"
                     key={tab}
                 >
-                    <span onClick={() => tabSelected(tab)} >
+                    <a
+                        href={'#' + tab.toLowerCase()}
+                        onClick={() => tabSelected(tab)}
+                        >
                         {tab}
-                    </span>
+                    </a>
                 </li>
             ))}
         </ul>
