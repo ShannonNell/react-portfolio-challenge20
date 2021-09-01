@@ -15,6 +15,7 @@ function Nav() {
                     key={tab}
                 >
                     <a
+                        data-test-id='{tab}'
                         href={'#' + tab.toLowerCase()}
                         onClick={() => tabSelected(tab)}
                         >
