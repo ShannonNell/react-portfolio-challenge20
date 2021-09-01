@@ -10,6 +10,7 @@ function Header() {
     const [currentPage, handlePageChange] = useState('About');
 
     const renderPage = () => {
+        // switch statement that will render appropriate selection
         switch(currentPage) {
             case "about": 
             return <About></About>
