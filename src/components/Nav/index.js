@@ -1,11 +1,7 @@
 import React from 'react';
 
-function Nav() {
+function Nav(props) {
     const tabs = ['about', 'portfolio', 'contact', 'resume'];
-
-    function tabSelected(tab) {
-        console.log(`${tab} clicked`);
-    };
 
     return (
         <ul className="flex-row">
@@ -15,9 +11,11 @@ function Nav() {
                     key={tab}
                 >
                     <a
-                        data-test-id='{tab}'
                         href={'#' + tab.toLowerCase()}
-                        onClick={() => tabSelected(tab)}
+                        onClick={() => props.handlePageChange(tab)}
+                        className={
+                            props.currentPage === tab ? 'nav-link active' : 'nav-link'
+                        }
                         >
                         {tab}
                     </a>

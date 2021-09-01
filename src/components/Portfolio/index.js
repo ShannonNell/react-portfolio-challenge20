@@ -1,30 +1,18 @@
 import React from 'react';
 // import PhotoList from '../PhotoList';
-import photo from "../../assets/projects/0.png";
+import PhotoList from '../PhotoList';
 
 
 function Portfolio(props) {
-    const currentProject = {
-        title: "The title",
-        description: "some cool description",
-        github: "github link",
-        deployed: "deployed link"
-    };
+    const { currentProject } = props; 
 
     return (
-        <section>
-            <h1>{currentProject.title}</h1>
-            <div>
-                <img
-                    src={photo}
-                    alt="Example image"
-                    className="img-thumbnail mx-1"
-                />
-            </div>
-            <p>{currentProject.description}</p>
-            <p>{currentProject.github}</p>
-            <p>{currentProject.deployed}</p>
-        </section>
-    );
+        <div>hi these are words</div>
+        // <section>
+        //     <h1 data-testid="h1tag">{currentProject.name}</h1>
+        //     <p>{currentProject.description}</p>
+        //     <PhotoList category={currentProject.name} />
+        // </section>
+    )
 }
 export default Portfolio;
