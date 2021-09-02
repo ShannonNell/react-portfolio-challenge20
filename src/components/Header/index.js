@@ -33,7 +33,7 @@ function Header() {
                 </h1>
                 <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
             </div>
-            <div>
+            <div className="flex-row">
                 {
                     renderPage()
                 }

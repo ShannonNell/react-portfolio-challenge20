@@ -61,7 +61,7 @@ function Projects() {
     ];
 
     return (
-        <section>
+        <section className="my-5">
             <h1 className="project-title">my projects</h1>
             {projectsArr.map((project, idx) => {
                 return (
@@ -79,7 +79,7 @@ function Projects() {
                         <div className="card-body">
                             <h2 className="projectName card-title">
                                 {/* Project title and deployed link */}
-                                <a href={project.deployedApp} className="projectTitle">
+                                <a href={project.deployedApp} className="projectTitle" target="_blank">
                                     {project.name}
                                 </a>
                             </h2>
@@ -88,23 +88,18 @@ function Projects() {
                             <p className="card-text">{project.description}</p>
 
                             {/* GitHub link */}
-                            <a href={project.github} className="gitHubIcon card-link">
+                            <a href={project.github} className="gitHubIcon card-link" target="_blank">
                                 <img alt="GitHub icon" src={GitHubIconPink} width="50px"></img>
                             </a>
 
                             {/* Deployed link */}
-                            <a href={project.github} className="linkIcon card-link">
+                            <a href={project.deployedApp} className="linkIcon card-link" target="_blank">
                                 <img alt={project.name} src={linkIconPink} width="50px"></img>
                             </a>
 
                             {/* Project Skills */}
                             <p className="card-text">Skills: {project.skills}</p>
                         </div>
-
-
-
-
-
                     </div>
                 )
             })}

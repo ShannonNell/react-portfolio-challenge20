@@ -97,16 +97,22 @@ header {
   display: flex;
   margin-left: 300px;
 }
+
+li {
+  list-style: none;
+}
 /* HEADER END */
 
 /* ABOUT ME START */
 #about,
-.project-title {
+.project-title,
+.contact-title {
   text-align: end;
   color: var(--secondary);
   border-bottom: var(--secondary) solid 3px;
   padding-bottom: 10px;
   margin-bottom: 30px;
+  font-size: 2.5rem;
 }
 
 .content {
@@ -126,7 +132,8 @@ header {
   box-shadow: 2px 2px 5px var(--darker);
 }
 
-.about-txt {
+.about-txt,
+contact-txt {
   font-weight: lighter;    
   font-size: 22px;
   line-height: 1.9;
@@ -224,37 +231,34 @@ footer a:hover {
 }
 /* PROJECTS END */
 
+
+/* CONTACT START */
+
 button {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
-  padding: 0.25rem 1rem;
+  padding: 0.4rem 1rem;
   border-radius: .5rem;
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 0 1px;
   background-color: var(--secondary);
+  color: var(--light);
 }
 
 button:hover {
   opacity: .8;
 }
 
-button[disabled] {
-  cursor: default;
-  opacity: .8;
+.contact-form {
+  display: block;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
 }
 
-/* img {
-  max-width: 100%;
-} */
-
-span[role="img"] {
-  cursor: default;
-}
-
-form {
-  width: 40%;
+.contact-info {
+  margin-bottom: 1rem;
 }
 
 input {
@@ -271,12 +275,6 @@ input:focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
 
-li {
-  list-style: none;
-}
-
-
-
 textarea {
 	width: 600px;
 	height: 120px;
@@ -284,12 +282,24 @@ textarea {
 	padding: 5px;
 }
 
-.container {
+.contact-message {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+
+.contact-message a:hover {
+  border: none;
+  color: var(--secondary)
+}
+/* CONTACT END */
+
+/* .container {
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .flex-row {
   display: flex;
@@ -382,14 +392,3 @@ textarea {
 	margin-bottom: 25px;
 }
 
-button {
-	background: var(--primary);
-	border: 0;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;	
-}
