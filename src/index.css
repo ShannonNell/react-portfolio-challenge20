@@ -70,6 +70,7 @@ a {
 	color: var(--light);
 	font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -99,9 +100,13 @@ header {
 /* HEADER END */
 
 /* ABOUT ME START */
-#about {
+#about,
+.project-title {
   text-align: end;
-  color: var(--secondary)
+  color: var(--secondary);
+  border-bottom: var(--secondary) solid 3px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .content {
@@ -172,6 +177,52 @@ footer a:hover {
   filter: brightness(2);
 }
 /* FOOTER END */
+
+
+/* PROJECTS START */
+.card {
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  /* border: 3px solid var(--secondaryRGB); */
+  /* border-radius: .25rem; */
+  margin-bottom: 50px;
+
+}
+
+.card-img-top {
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.card-title,
+.card-text {
+  margin-bottom: .5rem;
+}
+
+.card-link:hover {
+  border: none;
+  filter: brightness(2);
+}
+
+.card-link {
+  padding: 0px 10px;
+}
+
+.img-thumbnail {
+  width: auto;
+  height: 300px;
+}
+/* PROJECTS END */
 
 button {
   font-size: 1rem;
@@ -298,17 +349,12 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
+/* .card {
   width: 25%;
   text-align: center;
-}
+} */
 
-.img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
-}
+
 
 .modalBackdrop {
 	background: rgba(0, 0, 0, .65);

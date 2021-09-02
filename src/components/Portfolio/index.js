@@ -1,5 +1,6 @@
 import React from 'react';
-import GitHubIcon from '../../assets/icon_gitHub.png';
+import GitHubIconPink from '../../assets/icon_gitHub_pink.png';
+import linkIconPink from '../../assets/icon_link_pink.png'
 import img0 from '../../assets/projects/0.png'
 import img1 from '../../assets/projects/1.png'
 import img2 from '../../assets/projects/2.png'
@@ -61,27 +62,12 @@ function Projects() {
 
     return (
         <section>
-            <h1>My Projects</h1>
+            <h1 className="project-title">my projects</h1>
             {projectsArr.map((project, idx) => {
                 return (
-                    <div key={idx} className="flex-row">
-                        <h2 className="projectName">
-                            {/* Project title and deployed link */}
-                            <a href={project.deployedApp} className="projectTitle">
-                                {project.name}
-                            </a>
-                        </h2>
-
-                        {/* GitHub link */}
-                        <a href={project.github} className="gitHubIcon">
-                            <img alt="GitHub icon" src={GitHubIcon} width="50px"></img>
-                        </a>
-
-                        {/* Project Description */}
-                        <p>{project.description}</p>
-
+                    <div key={idx} className="card">
                         {/* Project image */}
-                        <div className="images">
+                        <div className="card-img-top">
                             <img
                                 src={project.img}
                                 className="projectImgs img-thumbnail mx-1"
@@ -90,6 +76,35 @@ function Projects() {
                             >
                             </img>
                         </div>
+                        <div className="card-body">
+                            <h2 className="projectName card-title">
+                                {/* Project title and deployed link */}
+                                <a href={project.deployedApp} className="projectTitle">
+                                    {project.name}
+                                </a>
+                            </h2>
+
+                            {/* Project Description */}
+                            <p className="card-text">{project.description}</p>
+
+                            {/* GitHub link */}
+                            <a href={project.github} className="gitHubIcon card-link">
+                                <img alt="GitHub icon" src={GitHubIconPink} width="50px"></img>
+                            </a>
+
+                            {/* Deployed link */}
+                            <a href={project.github} className="linkIcon card-link">
+                                <img alt={project.name} src={linkIconPink} width="50px"></img>
+                            </a>
+
+                            {/* Project Skills */}
+                            <p className="card-text">Skills: {project.skills}</p>
+                        </div>
+
+
+
+
+
                     </div>
                 )
             })}
