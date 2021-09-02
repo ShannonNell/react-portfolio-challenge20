@@ -43,7 +43,7 @@ function ContactForm() {
 
     // JSX
     return (
-        <section className="my-5">
+        <section className="my-5 contact">
             <h2 className="contact-title">contact me</h2>
             <div className="content">
                 <div className="my-2 contact-txt">

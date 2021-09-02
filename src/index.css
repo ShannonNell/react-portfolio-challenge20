@@ -391,31 +391,62 @@ textarea {
 /* GENERAL STYLES END */
 
 
-
-
-/* .modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
+/* MEDIA QUERIES */
+/* Media Query for <=1000/smaller desktop */
+@media screen and (max-width: 1000px) {
+  .nav {
+    margin-left: 200px;
+  }
 }
 
-.modalContainer {
-	background: var(--darker);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 960px;
-}
-
-.modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 25px;
+/* Media Query for  <=900 */
+/* @media screen and (max-width: 900px) {
+  .nav {
+    margin: 0 auto;
+    display: block;
+    
+  }
 } */
+
+/* Media query for tablets <=768 */
+@media screen and (max-width: 768px) {
+  .nav {
+    margin-left: 10px;
+  }
+}
+
+
+/* Media Query for Mobile phones <=575px */
+@media screen and (max-width: 575px) {
+  .nav {
+    margin: 0 auto;
+  }
+
+  .content {
+    display: block;
+  }
+  
+  .about-img {
+    margin: 0 75px;
+  }
+
+  .card {
+    display: block;
+    border-bottom: solid 2px var(--secondary);
+  }
+
+  .projectImgs {
+    width: 100%;
+  }
+
+  .portfolio {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+}
+
 

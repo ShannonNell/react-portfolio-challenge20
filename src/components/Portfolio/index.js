@@ -61,7 +61,7 @@ function Projects() {
     ];
 
     return (
-        <section className="my-5">
+        <section className="my-5 portfolio">
             <h1 className="project-title">my projects</h1>
             {projectsArr.map((project, idx) => {
                 return (

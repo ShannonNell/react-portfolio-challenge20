@@ -26,12 +26,14 @@ function Header() {
     return (
         <header className="flex-row px-1">
             <div className="flex-row">
-                <h1>
+                <h1 className="flex-row">
                     <a href="/">
                         Shannon Nell
                     </a>
                 </h1>
-                <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
+                <div className="flex-row">
+                    <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
+                </div>
             </div>
             <div className="flex-row">
                 {
