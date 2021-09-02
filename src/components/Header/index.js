@@ -5,32 +5,34 @@ import Projects from '../Portfolio';
 import ContactForm from '../Contact';
 import Resume from '../Resume';
 
-function Header() {    
+function Header() {
     const [currentPage, handlePageChange] = useState('About');
 
     const renderPage = () => {
         // switch statement that will render appropriate selection
-        switch(currentPage) {
-            case "about": 
-            return <About></About>
-            case "portfolio": 
-            return <Projects></Projects>
-            case "contact": 
-            return <ContactForm></ContactForm>
+        switch (currentPage) {
+            case "about":
+                return <About></About>
+            case "portfolio":
+                return <Projects></Projects>
+            case "contact":
+                return <ContactForm></ContactForm>
             case "resume":
-            return <Resume></Resume>
-            default: 
-            return <About></About>
+                return <Resume></Resume>
+            default:
+                return <About></About>
         }
     };
     return (
         <header className="flex-row px-1">
-            <h2>
-                <a href="/">
-                    Shannon Nell
-                </a>
-            </h2>
-            <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+            <div className="flex-row">
+                <h1>
+                    <a href="/">
+                        Shannon Nell
+                    </a>
+                </h1>
+                <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
+            </div>
             <div>
                 {
                     renderPage()
