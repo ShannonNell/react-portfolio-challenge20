@@ -1,12 +1,11 @@
-
 main {
 	margin: 0 auto;
-	max-width: 90%;
-  padding: 50px 30px;
+	max-width: 100%;
 }
 :root {
   --primary: #774c60;
   --secondary: #b75d69;
+  --secondaryRGB: rgb(183, 93, 105, 0.5);
   --tertiary: #4A7C59;
   --light: #E2DADB;
   --dark: #090b0a;
@@ -78,20 +77,26 @@ a:hover {
   border-bottom: var(--secondary) solid 3px;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100%;
+}
+
+#content-wrap {
+  padding-bottom: 120px;
+}
+
+/* HEADER START */
+header {
+  margin: 50px;
+}
+
 .nav {
   margin: auto;
   display: flex;
   margin-left: 300px;
 }
-
-/* .about-img {
-  border-radius: 50%;
-  width: 300px;
-} */
-
-/* .about-txt {
-  width: 100px;
-} */
+/* HEADER END */
 
 /* ABOUT ME START */
 #about {
@@ -123,8 +128,50 @@ a:hover {
   flex: 2;
   margin: auto 0;
 }
-
 /* ABOUT ME END */
+
+
+/* FOOTER START */
+footer {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(0, 0, 0, .5), var(--secondaryRGB), rgb(0, 0, 0, .5));
+}
+
+footer a:hover {
+  border-top: none;
+  border-bottom: none;
+}
+
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 100px;
+  display: flex;
+}
+
+.footer-content img {
+  width: 100%;
+  padding: 3px;
+}
+
+.footer-copyright {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.footer-content img:hover {
+  filter: brightness(2);
+}
+/* FOOTER END */
 
 button {
   font-size: 1rem;

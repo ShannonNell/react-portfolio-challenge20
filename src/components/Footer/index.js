@@ -6,18 +6,23 @@ import snellIcon from '../../assets/icon_snell.png';
 
 function Footer() {
     return (
-        <footer className="page-footer" id="footer">
-            <p> &copy; 2021 Shannon</p>
-            <a id="footerLink" href="https://github.com/ShannonNell">
-                <img alt="GitHub icon" src={GitHubIcon} width="30px"></img>
-            </a>
-            <a id="footerLink" href="https://www.linkedin.com/in/shannonnell/">
-                <img alt="LinkedIn icon" src={LinkedInIcon} width="30px"></img>
-            </a>
-            <a id="footerLink" href="https://www.snellcreatives.ca/">
-                <img alt="snell creatives icon" src={snellIcon} width="30px"></img>
-            </a>
-            
+        <footer id="footer">
+            <div className="footer-flex">
+                <div className="footer-content">
+                    <a id="footerLink" href="https://github.com/ShannonNell">
+                        <img alt="GitHub icon" src={GitHubIcon} width="30px"></img>
+                    </a>
+                    <a id="footerLink" href="https://www.linkedin.com/in/shannonnell/">
+                        <img alt="LinkedIn icon" src={LinkedInIcon} width="30px"></img>
+                    </a>
+                    <a id="footerLink" href="https://www.snellcreatives.ca/">
+                        <img alt="snell creatives icon" src={snellIcon} width="30px"></img>
+                    </a>
+                </div>
+                <div className="footer-copyright">
+                    <p className="footer-copyright"> &copy; 2021 Shannon</p>
+                </div>
+            </div>
         </footer>
     )
 };
