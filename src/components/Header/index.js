@@ -3,7 +3,7 @@ import logoImage from '../../assets/snell_logo.png';
 import Nav from '../../components/Nav';
 import About from '../About';
 import Projects from '../Portfolio';
-// import Contact from '../Contact';
+import ContactForm from '../Contact';
 // import Resume from '../Resume';
 
 function Header() {    
@@ -16,8 +16,8 @@ function Header() {
             return <About></About>
             case "portfolio": 
             return <Projects></Projects>
-            // case "contact": 
-            // return <Contact></Contact>
+            case "contact": 
+            return <ContactForm></ContactForm>
             // case "resume":
             // return <Resume></Resume>
             default: 
