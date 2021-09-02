@@ -426,8 +426,16 @@ textarea {
     display: block;
   }
   
+  .mq-pages {
+    width: 90%;
+  }
+
   .about-img {
-    margin: 0 75px;
+    margin: 0 50px;
+  }
+
+  .about-txt {
+    text-align: center;
   }
 
   .card {

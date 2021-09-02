@@ -3,7 +3,7 @@ import coverImage from "../../assets/aboutme_cover.jpg"
 
 function About() {
     return (
-        <section className="my-5">
+        <section className="my-5 about-sec">
             <h2 id="about">about</h2>
             <div className="content">
                 <img src={coverImage} className="my-2 about-img" alt="cover" />

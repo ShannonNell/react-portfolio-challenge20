@@ -35,7 +35,7 @@ function Header() {
                     <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
                 </div>
             </div>
-            <div className="flex-row">
+            <div className="flex-row mq-pages">
                 {
                     renderPage()
                 }
