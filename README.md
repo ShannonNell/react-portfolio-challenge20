@@ -1,3 +1,10 @@
+<!-- TODO -->
+- Css styling for entire thing
+- remove PhotoList
+- Contact form
+- Resume page
+- Fix testing for all?
+
 # Challenge 20 REACT: React Portfolio
 
 ## Description
