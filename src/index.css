@@ -288,19 +288,49 @@ textarea {
   margin: 0 auto 2rem;
 }
 
-.contact-message a:hover {
+.contact-message a:hover,
+.resume-content a:hover {
   border: none;
   color: var(--secondary)
 }
 /* CONTACT END */
 
-/* .container {
-  width: 85%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-} */
 
+/* RESUME START */
+.res-card {
+  background-color: rgb(226, 218, 219, .8);
+  color: var(--dark);
+  width: 80%;
+  font-weight: 500;
+  margin: 2rem auto;
+}
+
+.res-card1 {
+  width: 25%;
+}
+
+.res-card-container {
+  padding: 2px 16px;
+}
+
+.text-color,
+.text-color2 {
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.text-color2 {
+  font-size: 1.2rem;
+}
+
+.resume-content li {
+  padding-bottom: .5rem;
+}
+/* RESUME END */
+
+
+/* GENERAL STYLES */
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -358,15 +388,12 @@ textarea {
   padding-top: var(--spacing-two);
   padding-bottom: var(--spacing-two);
 }
-
-/* .card {
-  width: 25%;
-  text-align: center;
-} */
+/* GENERAL STYLES END */
 
 
 
-.modalBackdrop {
+
+/* .modalBackdrop {
 	background: rgba(0, 0, 0, .65);
 	bottom: 0;
 	left: 0;
@@ -390,5 +417,5 @@ textarea {
 	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 25px;
-}
+} */
 
