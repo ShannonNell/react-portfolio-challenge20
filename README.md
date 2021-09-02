@@ -4,7 +4,8 @@
 - Contact form
 - Resume page
 - Fix testing for all?
-- Footer (contact github/linkedin/etc in footer)
+- Media queries
+
 
 # Challenge 20 REACT: React Portfolio
 

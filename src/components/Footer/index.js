@@ -7,7 +7,7 @@ import snellIcon from '../../assets/icon_snell.png';
 function Footer() {
     return (
         <footer className="page-footer" id="footer">
-            <p>2021 Shannon</p>
+            <p> &copy; 2021 Shannon</p>
             <a id="footerLink" href="https://github.com/ShannonNell">
                 <img alt="GitHub icon" src={GitHubIcon} width="30px"></img>
             </a>
@@ -17,6 +17,7 @@ function Footer() {
             <a id="footerLink" href="https://www.snellcreatives.ca/">
                 <img alt="snell creatives icon" src={snellIcon} width="30px"></img>
             </a>
+            
         </footer>
     )
 };
