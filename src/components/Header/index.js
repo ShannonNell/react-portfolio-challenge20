@@ -27,7 +27,7 @@ function Header() {
         <header className="flex-row px-1">
             <div className="flex-row">
                 <h1 className="flex-row">
-                    <a href="/about">
+                    <a href="/#about">
                         Shannon Nell
                     </a>
                 </h1>
