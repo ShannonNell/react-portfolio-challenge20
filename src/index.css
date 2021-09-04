@@ -101,6 +101,10 @@ header {
 li {
   list-style: none;
 }
+
+.active {
+  color: var(--secondary);
+}
 /* HEADER END */
 
 /* ABOUT ME START */

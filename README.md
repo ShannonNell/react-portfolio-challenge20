@@ -1,16 +1,7 @@
-<!-- TODO -->
-- Css styling for entire thing
-- remove PhotoList
-- Contact form
-- Resume page
-- Fix testing for all?
-- Media queries
-
-
 # Challenge 20 REACT: React Portfolio
 
 ## Description
-A single-page REACT application to show off professional portfolio.
+A single-page REACT application to show off my professional portfolio. This project uses REACT to dynamically render content sections: 'about', 'portfolio', 'contact', and 'resume'.
 
 Done as a challenge for UoT's Coding Bootcamp.
 ___
@@ -26,13 +17,12 @@ ___
 ___
 
 ## Installation
-
+Clone the repository from GitHub to your local machine. In the command line type `npm install` to install the dependencies and `npm start` to run the server.
 ___
 
 ## Usage
-
-
-![screenshotHere](ch20_screenshot.png)
+This application will allow users to view an about me page, my projects, my resume, and fill out a contact form.
+![screenshotHere](./src/assets/ch20_screenshot.png)
 ___
 
 ## Links
