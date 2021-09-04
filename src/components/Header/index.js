@@ -27,7 +27,7 @@ function Header() {
         <header className="flex-row px-1">
             <div className="flex-row">
                 <h1 className="flex-row">
-                    <a href="/">
+                    <a href="/react-portfolio-challenge20">
                         Shannon Nell
                     </a>
                 </h1>
