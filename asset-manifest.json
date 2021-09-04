@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio-challenge20/static/css/main.3c08414c.chunk.css",
-    "main.js": "/react-portfolio-challenge20/static/js/main.d98ea7ae.chunk.js",
-    "main.js.map": "/react-portfolio-challenge20/static/js/main.d98ea7ae.chunk.js.map",
+    "main.js": "/react-portfolio-challenge20/static/js/main.d5203fcf.chunk.js",
+    "main.js.map": "/react-portfolio-challenge20/static/js/main.d5203fcf.chunk.js.map",
     "runtime-main.js": "/react-portfolio-challenge20/static/js/runtime-main.d8e37ced.js",
     "runtime-main.js.map": "/react-portfolio-challenge20/static/js/runtime-main.d8e37ced.js.map",
     "static/js/2.d3224ef9.chunk.js": "/react-portfolio-challenge20/static/js/2.d3224ef9.chunk.js",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.d8e37ced.js",
     "static/js/2.d3224ef9.chunk.js",
     "static/css/main.3c08414c.chunk.css",
-    "static/js/main.d98ea7ae.chunk.js"
+    "static/js/main.d5203fcf.chunk.js"
   ]
 }
