@@ -133,7 +133,7 @@ li {
   height: 300px;
   margin: auto 20px auto 0px;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px var(--darker);
+  box-shadow: 0px 5px 15px rgb(183, 93, 105, 0.50);
 }
 
 .about-txt,
@@ -405,15 +405,20 @@ textarea {
 }
 
 /* Media Query for  <=900 */
+/* @media screen and (max-width: 900px) {
+  .img-thumbnail {
+    height: 225px;
+    width: auto;
+  }
+} */
+
+/* Media query for tablets <=900 */
 @media screen and (max-width: 900px) {
   .img-thumbnail {
     height: 225px;
     width: auto;
   }
-}
 
-/* Media query for tablets <=768 */
-@media screen and (max-width: 768px) {
   .nav {
     margin-left: 10px;
   }
@@ -457,8 +462,8 @@ textarea {
 }
 
 
-/* Media Query for Mobile phones <=575px */
-@media screen and (max-width: 575px) {
+/* Media Query for Mobile phones <=700px */
+@media screen and (max-width: 700px) {
   .nav {
     margin: 0 auto;
   }
@@ -484,5 +489,6 @@ textarea {
     height: 200px;
   }
 }
+
 
 

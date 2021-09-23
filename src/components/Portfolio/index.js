@@ -7,9 +7,18 @@ import img2 from '../../assets/projects/2.png'
 import img3 from '../../assets/projects/3.png'
 import img4 from '../../assets/projects/4.png'
 import img5 from '../../assets/projects/5.png'
+import img6 from '../../assets/projects/6.png'
 
 function Projects() {
     const projectsArr = [
+        {
+            name: 'Loco for Local',
+            description: 'A handy travel app that shows you where your favourite local vendors are located.',
+            github: 'https://github.com/uotGroup4/loco-for-local',
+            deployedApp: 'https://loco-for-local.herokuapp.com/',
+            skills: 'MERN, REACT, GraphQL API, JWT',
+            img: `${img6}`
+        },
         {
             name: 'Beats and Bops',
             description: 'A cool music visualizer that runs while a user plays their music of choice.',
